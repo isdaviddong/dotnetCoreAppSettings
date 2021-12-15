@@ -16,7 +16,7 @@ namespace testappsetting.Pages
         public IndexModel(ILogger<IndexModel> logger, IConfiguration config)
         {
             _logger = logger;
-            Enviroment = config.GetSection("AppConfiguration")["Enviroment"];
+            Enviroment = config.GetSection("AppConfiguration")["Environment"];
         }
 
         public void OnGet()
