@@ -12,11 +12,11 @@ namespace testappsetting.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        public string Enviroment = "";
+        public string Environment = "";
         public IndexModel(ILogger<IndexModel> logger, IConfiguration config)
         {
             _logger = logger;
-            Enviroment = config.GetSection("AppConfiguration")["Environment"];
+            Environment = config.GetSection("AppConfiguration")["Environment"];
         }
 
         public void OnGet()
